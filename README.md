@@ -1,7 +1,5 @@
 # AngularWithDotNetCoreElectronNET
 Angular SPA with Dotnet Core and ElectronNet API
-# AngularWithDotNetCoreElectronNET
-Angular SPA with Dotnet Core and ElectronNet API
 
 1. Open VS 2017 with Administrator mode
 2. Create Asp.Net core Web Application with Angular template
@@ -73,7 +71,7 @@ Angular SPA with Dotnet Core and ElectronNet API
 10. Got cmd and execte the following command "electronize start", it will open the desktop application. First time it will take time.
 
 
-11. Production build for windows:electronize build /target win
+11. Production build for windows: electronize build /target win
 
 Prerequisites
 1. Dotnet core SDK 2.2
