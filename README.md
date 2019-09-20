@@ -11,6 +11,7 @@ Angular SPA with Dotnet Core and ElectronNet API
 6. Right click on dependencies, goto Nuget package manager and install ElectronNET.API
 7. Add below method in Startup.cs
 8. Call that method from Configure() in Startup.cs
+
 	public async void ElectronBootstrap()
         {
             BrowserWindowOptions options = new BrowserWindowOptions
