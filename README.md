@@ -12,14 +12,15 @@ Angular SPA with Dotnet Core and ElectronNet API
 7. Add below method in Startup.cs
 8. Call that method from Configure() in Startup.cs
 
-	public async void ElectronBootstrap()
-        {
+	
+
+            public async void ElectronBootstrap()
+            {
             BrowserWindowOptions options = new BrowserWindowOptions
             {
                 Show = false
             };
-
-            BrowserWindow mainWindow = await Electron.WindowManager.CreateWindowAsync();
+	    BrowserWindow mainWindow = await Electron.WindowManager.CreateWindowAsync();
             mainWindow.OnReadyToShow += () =>
             {
                 mainWindow.Show();
@@ -53,12 +54,14 @@ Angular SPA with Dotnet Core and ElectronNet API
             Electron.Menu.SetApplicationMenu(menu);
         }
 9. Add UseElectron(args) in Program.cs
+
 		public static IWebHostBuilder CreateWebHostBuilder(string[] args)
         {
             return WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
                 .UseElectron(args);
         }
+	
 10. Got cmd and execte the following command "electronize start", it will open the desktop application. First time it will take time.
 
 
