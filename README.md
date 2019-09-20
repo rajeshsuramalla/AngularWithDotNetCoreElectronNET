@@ -9,8 +9,7 @@ Angular SPA with Dotnet Core and ElectronNet API
 4. Goto project folder and open cmd 
 5. Execute the following command "electronize init", it will create electron-manifest.json file in project folder
 6. Right click on dependencies, goto Nuget package manager and install ElectronNET.API
-7. Add below method in Startup.cs
-8. Call that method from Configure() in Startup.cs
+7. Add ElectronBootstrap() method in Startup.cs
 
 	
 
@@ -53,6 +52,15 @@ Angular SPA with Dotnet Core and ElectronNet API
 
             Electron.Menu.SetApplicationMenu(menu);
         }
+	
+8. Call that method from Configure() in Startup.cs
+
+  
+         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        {
+            ElectronBootstrap();
+        }
+
 9. Add UseElectron(args) in Program.cs
 
 		public static IWebHostBuilder CreateWebHostBuilder(string[] args)
