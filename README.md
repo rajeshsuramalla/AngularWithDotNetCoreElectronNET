@@ -68,10 +68,9 @@ Angular SPA with Dotnet Core and ElectronNet API
                 .UseElectron(args);
         }
 	
-10. Got cmd and execte the following command "electronize start", it will open the desktop application. First time it will take time.
-
-
-11. Production build for windows: electronize build /target win
+10. Build the project
+11. Goto project folder, open cmd and execute the following command "electronize start", it will open the desktop application. First time it will take time.
+12. Production build for windows: electronize build /target win
 
 Prerequisites
 1. Dotnet core SDK 2.2
