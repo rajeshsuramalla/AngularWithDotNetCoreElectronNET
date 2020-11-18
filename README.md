@@ -73,7 +73,7 @@ Angular SPA with Dotnet Core and ElectronNet API
 12. Production build for windows: electronize build /target win
 
 Prerequisites
-1. Dotnet core SDK 2.2
+1. Dotnet core SDK 3.1
 2. Node js
 3. Angular
-4. ElectronNET.CLI
+4. ElectronNET.CLI 9.31.2
